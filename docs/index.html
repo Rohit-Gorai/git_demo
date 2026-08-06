@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FinSchool | Learn Finance the Interactive Way</title>
+    <meta name="description" content="FinSchool is an interactive finance learning platform with lessons, Excel-style practice, quizzes, and finance roadmaps." />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+      :root{color:#0f172a;background:#fff;font-family:Inter,system-ui,sans-serif;line-height:1.7}*{box-sizing:border-box}body{margin:0}.shell{display:grid;grid-template-columns:280px minmax(0,1fr)260px;min-height:100vh}.side,.progress{background:#f8fafc;border-color:#e2e8f0;padding:24px;position:sticky;top:0;height:100vh;overflow:auto}.side{border-right:1px solid #e2e8f0}.progress{border-left:1px solid #e2e8f0}.content{max-width:800px;margin:0 auto;padding:40px 28px}h1{font-size:48px;line-height:1.1}h2{font-size:36px}h3{font-size:28px}h4{font-size:22px}p,li{font-size:18px}.small{font-size:16px;color:#475569}.caption{font-size:14px;color:#475569}.card{border:1px solid #e2e8f0;border-radius:14px;padding:20px;background:#fff;margin:16px 0}.button{background:#2563eb;color:#fff;border:0;border-radius:10px;padding:10px 16px;text-decoration:none;display:inline-block}.lesson-link{display:block;padding:6px 0;color:#475569;text-decoration:none}.lesson-link:hover{color:#2563eb}.search{width:100%;padding:14px 16px;border:1px solid #e2e8f0;border-radius:12px}.sandbox table{border-collapse:collapse;width:100%}.sandbox td,.sandbox th{border:1px solid #e2e8f0;padding:8px}.sandbox input{border:0;width:100%;outline:2px solid #2563eb22;padding:4px}@media(max-width:1000px){.shell{grid-template-columns:1fr}.side,.progress{position:static;height:auto}.content{padding:24px}}
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <aside class="side" aria-label="Lesson navigation">
+        <strong>FinSchool</strong>
+        <h4>Introduction</h4><a class="lesson-link" href="#what-is-finance">What is Finance</a><a class="lesson-link" href="#time-value-of-money">Time Value of Money</a>
+        <h4>Financial Statements</h4><a class="lesson-link" href="#income-statement">Income Statement</a><a class="lesson-link" href="#balance-sheet">Balance Sheet</a><a class="lesson-link" href="#cash-flow">Cash Flow Statement</a>
+        <h4>Excel</h4><a class="lesson-link" href="#excel-basics">Excel Basics</a><a class="lesson-link" href="#sum">SUM</a><a class="lesson-link" href="#if">IF</a><a class="lesson-link" href="#xlookup">XLOOKUP</a>
+      </aside>
+      <main class="content">
+        <p class="caption">The W3Schools of Finance</p>
+        <h1>Learn Finance the Interactive Way</h1>
+        <p>FinSchool teaches finance with simple explanations, real-world examples, spreadsheet practice, and quizzes.</p>
+        <input class="search" aria-label="Search lessons" placeholder="Search lessons, formulas, interview questions..." />
+        <section class="card"><h2>Continue Learning</h2><p>Start with finance basics, then move into statements, Excel, modeling, and valuation.</p><a class="button" href="#what-is-finance">Start Lesson</a></section>
+        <section id="what-is-finance"><h2>What is Finance</h2><p class="small">Estimated time: 12 minutes</p><h3>Learning Objectives</h3><ul><li>Explain finance in plain English.</li><li>Connect money decisions to risk and return.</li><li>Practice the concept in a spreadsheet-style sandbox.</li></ul><h3>Simple Explanation</h3><p>Imagine you own a lemonade stand. Finance helps you decide how much cash you need, what to spend, what to save, and whether a decision is worth the risk.</p><h3>Formula</h3><pre class="card">Value today + decisions about risk and return</pre></section>
+        <section id="time-value-of-money"><h2>Time Value of Money</h2><p>Money today can be invested, so it is usually worth more than the same amount in the future.</p><pre class="card">Future Value = Present Value × (1 + Rate)^Periods</pre></section>
+        <section id="income-statement"><h2>Income Statement Basics</h2><p>The income statement shows revenue, expenses, and profit over a period.</p><pre class="card">Revenue - Expenses = Net Income</pre></section>
+        <section id="balance-sheet"><h2>Balance Sheet Basics</h2><p>The balance sheet shows what a company owns and how those assets are funded.</p><pre class="card">Assets = Liabilities + Equity</pre></section>
+        <section id="cash-flow"><h2>Cash Flow Basics</h2><p>Cash flow explains how cash moved through operating, investing, and financing activities.</p><pre class="card">Beginning Cash + Cash Inflows - Cash Outflows = Ending Cash</pre></section>
+        <section id="excel-basics"><h2>Excel Basics</h2><p>Financial models separate assumptions, calculations, and outputs so decisions are easy to audit.</p></section>
+        <section class="card sandbox" id="sum"><h2>Interactive Sandbox: SUM</h2><p>Type <strong>=SUM(B2:B3)</strong> in the answer cell.</p><table><tbody><tr><th>Driver</th><th>Value</th></tr><tr><td>Units</td><td>100</td></tr><tr><td>Price</td><td>20</td></tr><tr><td>Answer</td><td><input aria-label="Answer cell" placeholder="=SUM(B2:B3)" /></td></tr></tbody></table><p class="small">AI tutor: Check whether your formula starts with = and references the right cells.</p></section>
+        <section id="if"><h2>IF</h2><pre class="card">=IF(B2&gt;100,"High","Low")</pre></section>
+        <section id="xlookup"><h2>XLOOKUP</h2><pre class="card">=XLOOKUP(lookup_value, lookup_array, return_array)</pre></section>
+        <section><h2>Quiz</h2><article class="card"><p><strong>1. What should you do after reading?</strong></p><label><input type="radio" /> Practice in the sandbox</label><p class="caption">Answer: Practice in the sandbox. Interactive practice turns passive reading into durable skill.</p></article></section>
+      </main>
+      <aside class="progress" aria-label="Progress"><h4>Your progress</h4><p class="small">XP: 120 • Streak: 3 days</p><ol class="caption"><li>Read explanation</li><li>Try sandbox</li><li>Pass quiz</li></ol></aside>
+    </div>
+  </body>
+</html>
