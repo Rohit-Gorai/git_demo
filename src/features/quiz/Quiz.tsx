@@ -1,0 +1,2 @@
+import type { QuizQuestion } from '../../types/lesson';
+export function Quiz({questions}:{questions:QuizQuestion[]}){return <section><h3>Quiz</h3>{questions.map((q,i)=><article className="card" key={q.prompt}><p><strong>{i+1}. {q.prompt}</strong></p>{q.options.map(o=><label className="lesson-link" key={o}><input name={q.prompt} type="radio"/> {o}</label>)}<p className="caption">Answer: {q.answer}. {q.explanation}</p></article>)}</section>}
